@@ -97,8 +97,8 @@ app.get('/people-like-you', function (req, res) {
     });
 })
 
-app.listen(5000, function () {
-  console.log('App listening on port 8080!')
+app.listen(process.env.PORT || 5000, function () {
+  console.log('App listening on port 5000!')
 })
 
 module.exports = app;
