@@ -62,7 +62,7 @@ app.get('/people-like-you', function (req, res) {
           data[idx[i]] = 1
         } else if (data[idx[i]] == "false") {
           data[idx[i]] = 0
-        }  
+        }
         d = d + (data[idx[i]] - vals[i]) * (data[idx[i]] - vals[i])
       }
 
@@ -97,7 +97,7 @@ app.get('/people-like-you', function (req, res) {
     });
 })
 
-app.listen(8080, function () {
+app.listen(5000, function () {
   console.log('App listening on port 8080!')
 })
 
